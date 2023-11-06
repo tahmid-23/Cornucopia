@@ -13,8 +13,14 @@ export interface ToolCardProps {
 export default function ToolCard({ title, description, href }: ToolCardProps) {
   return (
     <Link className="text-inherit no-underline" href={href}>
-      <Card className="w-64 h-full" p="lg">
-        <Card.Section p="xs" withBorder>
+      <Card className="w-64 h-full" p="lg" shadow="lg">
+        <Card.Section
+          style={{
+            backgroundColor: "var(--mantine-primary-color-filled)",
+          }}
+          p="xs"
+          withBorder
+        >
           <Title order={2}>{title}</Title>
         </Card.Section>
         <Card.Section p="xs">

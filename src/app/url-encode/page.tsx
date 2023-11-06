@@ -1,5 +1,15 @@
-import UrlEncodeTool from "@/components/url-encode/UrlEncodeTool";
+"use client";
+
+import StringConversionTool from "@/components/tool/StringConversionTool";
 
 export default function Page() {
-  return <UrlEncodeTool />;
+  return (
+    <StringConversionTool
+      title="URL Encoder/Decoder"
+      encodeKeyword="Encode"
+      decodeKeyword="Decode"
+      encode={encodeURIComponent}
+      decode={decodeURIComponent}
+    />
+  );
 }

@@ -26,6 +26,11 @@ export default function Page() {
             description={"Test HTTP requests."}
             href={"/http-test"}
           />
+          <ToolCard
+            title={"JavaScript String Escape"}
+            description={"Escape strings to use in a JavaScript string."}
+            href={"/string-escape"}
+          />
         </Flex>
       </Paper>
     </Stack>
