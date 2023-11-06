@@ -67,6 +67,7 @@ export default function HttpTestForm({ onTest }: HttpTestFormProps) {
             placeholder="https://google.com/"
             required
             withAsterisk={false}
+            type="url"
             value={url}
             onChange={(e) => setURL(e.currentTarget.value)}
           />

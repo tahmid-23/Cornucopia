@@ -1,4 +1,4 @@
-import { Box, Button, Text } from "@mantine/core";
+import { Title } from "@mantine/core";
 import Link from "next/link";
 
 export default function NavBar() {
@@ -7,11 +7,11 @@ export default function NavBar() {
       className="h-28 px-8 flex items-center"
       style={{ backgroundColor: "var(--mantine-primary-color-filled)" }}
     >
-      <Text className="text-5xl">
+      <Title className="text-5xl">
         <Link className="text-inherit no-underline" href="/">
           Cornucopia
         </Link>
-      </Text>
+      </Title>
     </div>
   );
 }
