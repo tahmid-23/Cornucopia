@@ -1,7 +1,7 @@
 "use client";
 
 import { Paper, NumberInput, Button, Stack, Group } from "@mantine/core";
-import { FormEvent, useState } from "react";
+import { FormEvent, useCallback, useState } from "react";
 
 export interface LoanFormProps {
   onCalculate?: (
@@ -18,10 +18,13 @@ export default function LoanForm({ onCalculate }: LoanFormProps) {
   const [loanYears, setLoanYears] = useState<number>();
   const [loanMonths, setLoanMonths] = useState<number>();
 
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    onCalculate?.(principal!, interest!, loanYears!, loanMonths!);
-  };
+  const onSubmit = useCallback(
+    (e: FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+      onCalculate?.(principal!, interest!, loanYears!, loanMonths!);
+    },
+    [interest, loanMonths, loanYears, onCalculate, principal],
+  );
 
   return (
     <Paper
