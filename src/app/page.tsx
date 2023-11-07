@@ -23,7 +23,7 @@ export default function Page() {
             href="/color"
           />
           <ToolCard
-            title="String conversion"
+            title="String Conversion"
             description="Encode and decode URLs/Base64 and escape JavaScript strings."
             href="/string-convert"
           />
