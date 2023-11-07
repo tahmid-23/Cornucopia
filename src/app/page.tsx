@@ -13,19 +13,14 @@ export default function Page() {
             href="/loan"
           />
           <ToolCard
-            title="URL Encoder/Decoder"
-            description="Encode or decode a URL. Or any string, for that matter."
-            href="/url-encode"
+            title="String conversion"
+            description="Encode and decode URLs/Base64 and escape JavaScript strings."
+            href="/string-convert"
           />
           <ToolCard
             title="HTTP Tester"
             description="Test HTTP requests."
             href="/http-test"
-          />
-          <ToolCard
-            title="JavaScript String Escape"
-            description="Escape strings to use in a JavaScript string."
-            href="/string-escape"
           />
           <ToolCard
             title="Color Picker"
