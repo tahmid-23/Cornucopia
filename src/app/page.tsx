@@ -13,11 +13,6 @@ export default function Page() {
             href="/loan"
           />
           <ToolCard
-            title="String conversion"
-            description="Encode and decode URLs/Base64 and escape JavaScript strings."
-            href="/string-convert"
-          />
-          <ToolCard
             title="HTTP Tester"
             description="Test HTTP requests."
             href="/http-test"
@@ -26,6 +21,16 @@ export default function Page() {
             title="Color Picker"
             description="Choose colors in a variety of formats."
             href="/color"
+          />
+          <ToolCard
+            title="String conversion"
+            description="Encode and decode URLs/Base64 and escape JavaScript strings."
+            href="/string-convert"
+          />
+          <ToolCard
+            title="String Replacement"
+            description="Replace strings in strings to get new strings."
+            href="/string-replace"
           />
         </Flex>
       </Paper>
